@@ -1,6 +1,8 @@
 fastapi
 uvicorn
-litellm
+litellm==1.91.3
 python-dotenv
 pydantic
 sqlalchemy
+streamlit
+requests
