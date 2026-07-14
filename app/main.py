@@ -7,6 +7,10 @@ from .services import LLMService
 
 app = FastAPI()
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
 @app.post("/chat")
 async def chat(request: ChatRequest, db: Session = Depends(get_db)):
     # 1. Save user message with conversation_id
