@@ -6,3 +6,6 @@ pydantic
 sqlalchemy
 streamlit
 requests
+psutil
+py-cpuinfo
+nvidia-ml-py
